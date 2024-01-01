@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+elasticsearch:
+  # 三种连接方式： 无验证直连、用户名密码、APIkey
+  # 直连模式用这个hosts就可以 但是前提是关掉xpack的安全验证（es配置里的xpack.security.enabled: false）
+  # 使用下边的用户名密码和APIkey的配置的时候就需要将xpack的安全验证打开，这个时候直连模式就不能用了
+  hosts: localhost:9200,localhost:9201,localhost:9202
+  # 用户名密码的方式
+  username: elastic
+  password: whc1234
+  # APIkey的连接方式
+  apikey: b3RESXc0d0J5am1ESEpBT2FQY0w6TVhYaXBPb2dTVU92NTFtVEJWMGREZw==
